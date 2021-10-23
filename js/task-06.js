@@ -1,7 +1,7 @@
 const inputElement = document.getElementById("validation-input");
 const blurListener = () => {
     const valueLength = inputElement.value.length;
-    const maxLength = +inputElement.dataset.length;
+    const maxLength = +inputElement.dataset.length; // data-length attribute
 
     if (valueLength === maxLength) {
         inputElement.classList.remove('invalid');
